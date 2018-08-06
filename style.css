@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(26, 26, 26, 0.9), rgba(26, 26, 26, 0.8)), url("https://wallpaper.wiki/wp-content/uploads/2017/05/Free-Black-And-Red-Wallpaper.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ee432e;
+    margin: 80px 0;
+}
+
+.box {
+    width: 40%;
+    margin: 0 auto;
+    padding: 35px;
+    text-align: center;
+}
+
+.button {
+    padding: 10px;
+    background-color: #ee432e;
+    background-image: -webkit-linear-gradient(
+            top,
+            #ee432e 0%,
+            #c63929 50%,
+            #b51700 50%,
+            #891100 100%
+    );
+    background-image: -moz-linear-gradient(
+            top,
+            #ee432e 0%,
+            #c63929 50%,
+            #b51700 50%,
+            #891100 100%
+    );
+    background-image: -o-linear-gradient(
+            top,
+            #ee432e 0%,
+            #c63929 50%,
+            #b51700 50%,
+            #891100 100%
+    );
+    background-image: linear-gradient(
+            top,
+            #ee432e 0%,
+            #c63929 50%,
+            #b51700 50%,
+            #891100 100%
+    );
+    border: 1px solid #951100;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
+    padding: 12px 20px 14px 20px;
+    text-decoration: none;
+    color: #fff;
+    font: bold 20px/1 "helvetica neue", helvetica, arial, sans-serif;
+    text-align: center;
+    text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8);
+    animation: pulse 2s infinite;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333333;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        color: #891100;
+    }
+    50% {
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+    .popup {
+        width: 70%;
+    }
+}
